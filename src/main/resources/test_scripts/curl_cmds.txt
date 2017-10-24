@@ -1,0 +1,10 @@
+
+// Create race from template
+curl -d '{"raceName":"test4", "raceType":"trail","raceDate":"2017-09-01","raceWebsite":"test.com","createdById":"curlID","createdByName":"curl"}' -H "Content-Type: application/json" -X POST http://localhost:8080/race/create
+
+// Update race from template
+curl -d '{"raceid":1,"raceName":"test1.1", "raceType":"trail","raceDate":"2017-09-01","raceWebsite":"test.com","createdById":"curlID","createdByName":"curl"}' -H "Content-Type: application/json" -X POST http://localhost:8080/race/update
+
+//Create detailed raceleg
+
+curl -d '{race_leg":1,"race_segment":1,"run":1,"van":1,"status":"default","raceId":2,"distance":4.3,"difficulty":"Moderate","elevationGain":100,"elevationLoss":200,"relativeDistance":4.3,"legfactor":1.0}' -H "Content-Type: application/json" -X POST http://localhost:8080/raceleg/create
