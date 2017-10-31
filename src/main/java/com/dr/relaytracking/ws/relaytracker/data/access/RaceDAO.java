@@ -112,7 +112,7 @@ public class RaceDAO {
 		return new Race(rs.getLong("raceid"),
 				 rs.getString("racename"),
 				 rs.getString("racetype"),
-				 (LocalDate)rs.getObject("raceDate",LocalDate.class),
+				 rs.getDate("racedate").toLocalDate(),
 				 rs.getString("racewebsite"),
 				 rs.getString("createdbyid"),
 				 rs.getString("createdbyname"),

@@ -32,6 +32,8 @@ public class Race {
     	this.raceid = raceid;
     	this.raceName = raceName;
         this.raceType = raceType;
+        this.raceDate = raceDate;
+        this.raceWebsite = raceWebsite;
         this.createdById = createdById;
         this.createdByName = createdByName;
         this.recordStatus = recordStatus;
