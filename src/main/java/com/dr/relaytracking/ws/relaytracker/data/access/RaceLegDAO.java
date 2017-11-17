@@ -87,8 +87,11 @@ public class RaceLegDAO {
 		}
 		},keyHolder);
 
-		if (row > 0)
-			raceleg.setRacelegid(keyHolder.getKey().longValue()); //line 72
+		if (row > 0){
+			if (keyHolder.getKey() != null){
+				raceleg.setRacelegid(keyHolder.getKey().longValue()); 
+			}
+		}
 		return raceleg;
 	}
 	
